@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Search</title>
+        <style>
+            .colortext_1  {
+                color: rgb(223, 177, 52);
+            }
+            .colortext_2  {
+                color:rgb(80, 139, 235);
+            }
+            .colortext_3  {
+                color:rgb(175, 25, 25);
+            }
+            .colortext_4  {
+                color:rgb(16, 156, 16);
+            }
+
+            body{
+                font-family: arial,sans-serif;
+            }
+            form{
+                box-sizing: border-box;
+                position: absolute;
+                top: 25%;   
+                display: block;  
+                         
+              
+            }
+            #main_div{
+                display: block;
+                max-width: 1140px;
+                min-width: 200px;
+                width: 96%;
+                margin: 40px 2% 0 45px;
+            }
+            
+           .title_how{
+            position: relative;
+            float: right;
+            bottom: 10px; 
+            font-size: 14px
+            ;
+
+           }
+            .text_before{
+                display: inline - block;
+                font-family: inherit;
+                line-height: 16px;
+                font-size: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            } 
+            .input_field{
+                display: inline-block;
+                position: relative;
+                left: 90px; 
+            }
+            .text_after{
+                display: inline-block;
+                position: relative;
+                left: 160px;
+                width: 400px;
+                font-size: 12px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: inherit;
+                color: gray ;
+
+            }
+            .t_b{
+                display: inline-block;
+                width: 200px;
+                font-size: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: inherit;
+
+                
+            }
+           
+            .my{
+                box-sizing: border-box;
+                width: 561px;
+                text-align: center  ;
+                border: 1px solid gray;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.06);
+                margin: 10px;
+            }
+            .my:active,:focus{
+                outline: none;
+                border: 1px solid blue;
+            }
+            #lastinput{
+                box-sizing: border-box;
+                border-radius: 1px;
+                border: none;
+                display:block;
+                position:absolute; 
+                left: 740px; 
+                color: white;
+                background-color: #4d90fe;
+                padding-bottom: 6px;
+                padding-top: 6px;
+                width: 120px;
+            }
+            #lastinput:hover{
+                display:block;
+                position:absolute; 
+                left: 761px; 
+                background-color: #4d90fe;
+            }
+            .t_a{
+                margin-top: 10px;
+            }
+
+            
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div>
+            <img src="IMG_1.png" alt="GOOGLE">  
+        </div>
+
+
+        <div style="margin: 40px 2% 0 45px;color:#d93025;">   
+            <label style="cursor:de fault;font-size: 20px;">Advanced Search</label>
+        </div>
+
+        <div style="border-bottom: 1px solid #ebebeb;">
+        </div>
+         
+        <div id="main_div">
+            <div class="title_that" style="display: inline-block;" >
+                <label class="t_b">Знайти сторінки, що <br> містять...</label>
+                
+
+            </div>
+
+            <div class="title_how" style="display: inline-block; color: #777;" >
+                <label>How do it in the searching field</label>
+                
+
+
+            </div>
+            
+
+            <form  action="https://google.com/search">
+                <div class = "text_before">
+                     <label class="t_b">усі ці слова:</label>
+
+                     <div class="input_field">
+                        <input class="my" id="firstinput"  type="text" name="as_q",>
+                    </div>
+
+                    <div class="text_after">
+                        <label class="t_a";> Введіть важливі слова: триколірний рет-тер’єр </label>
+                    </div>
+                   
+
+                </div>
+
+                <div class = "text_before">
+                    <label class="t_b"> точне слово або фразу:  </label>
+                    
+                    <div class="input_field">
+                        <input class="my" id="secondinput"  type="text" name="as_epq",>
+                    </div>
+
+                    <div class="text_after">
+                        <label class="t_a";> Візьміть точні слова в лапки: "рет-тер’єр"  </label>
+                    </div>
+
+                    
+                </div>
+
+                <div class = "text_before">
+                     <label class="t_b">будь-яке з цих слів:</label>
+
+                     <div class="input_field">
+                        <input class="my" id="theerdinput "  type="text" name="as_oq",>
+
+                    </div>
+
+                    <div class="text_after">
+                        <label class="t_a";> Введіть OR між усіма потрібними словами: мініатюрні OR стандартні </label>
+                    </div>
+                </div>
+
+                <div class = "text_before">
+                    <label class="t_b"> q   жодне з цих слів</label>
+
+                    <div class="input_field">
+                        <input class="my" id="fourinput"  type="text" name="as_nloq",>
+                    </div>
+                    
+                    <div class="text_after">
+                        <label style="position:relative; top: 9px;px" class="t_a";> Поставте знак мінус перед небажаними словами:<br> -гризун, -"Джек Рассел" </label>
+                    </div>
+
+                    <input  id = "lastinput" type="submit" value="Google Search">
+
+                </div>
+
+                
+
+              
+
+            </form>
+
+        </div>     
+           
+    
+    
+
+
+        
+    </body>
+</html>
